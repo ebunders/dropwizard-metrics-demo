@@ -1,18 +1,15 @@
 package dw;
 
 import com.codahale.metrics.*;
-
 import com.codahale.metrics.health.HealthCheck;
 import com.codahale.metrics.health.HealthCheckRegistry;
-import form.Form;
-
-import java.util.Optional;
 
 import static com.codahale.metrics.MetricRegistry.name;
 import static com.codahale.metrics.health.HealthCheck.Result.healthy;
 import static com.codahale.metrics.health.HealthCheck.Result.unhealthy;
 import static java.util.Optional.ofNullable;
-import static java.util.concurrent.TimeUnit.*;
+import static java.util.concurrent.TimeUnit.MILLISECONDS;
+import static java.util.concurrent.TimeUnit.SECONDS;
 
 /**
  * Created by ernst on 4-7-17.
